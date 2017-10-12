@@ -4,5 +4,11 @@ html
   body
     h1 Image Search Abstraction Layer
     h2 How to Use:
-    p To search for an image, append your search term to /search. This will return 10 image results. You may add a ?offset= parameter to paginate through results. For example, not providing an offset, or providing ?offset=0 will show the first 10 results. If you provide ?offset=10 you will get then next 10 results (results 11-20).
-    p To see the 10 most recent searches, go to /history.
+    p To search for an image, append your search term to https://fcc-isal.herokuapp.com/search/
+    p This will return 10 image results. You may add a ?offset= parameter to paginate through results. For example, not providing an offset, or providing ?offset=0 will show the first 10 results. If you provide ?offset=10 you will get then next 10 results (results 11-20).
+    p To see the 10 most recent searches, go to: https://fcc-isal.herokuapp.com/history
+    h2 Example Usage:
+    p https://fcc-isal.herokuapp.com/search/dogs?offset=10
+    p The above will show results 11-20 for the search query 'dogs'.
+    p https://fcc-isal.herokuapp.com/history
+    p The above will return the 10 most recent search queries with unix timestamps.
